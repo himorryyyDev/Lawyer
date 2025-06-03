@@ -1,0 +1,14 @@
+:root {
+	font-family: 'NunitoSans', sans-serif;
+
+	background-color: #f7f7f7;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.body {
+	overflow-x: hidden;
+}
