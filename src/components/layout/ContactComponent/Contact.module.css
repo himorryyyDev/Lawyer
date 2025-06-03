@@ -1,0 +1,30 @@
+.container {
+  width: 100vw;
+  height: 50px;
+  padding: 0px 250px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.contact__container a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  gap: 5px;
+}
+
+.call {
+  color: #4F8FF0;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,11 +1,13 @@
 import './App.css'
-import Header from './components/layout/HeaderComponent/Header'
+import Contact from './components/layout/ContactComponent/Contact'
+import Hero from './components/layout/HeroComponent/Hero'
 
 function App() {
 	return (
 		<>
 			<header>
-				<Header />
+				<Contact />
+				<Hero />
 			</header>
 		</>
 	)
