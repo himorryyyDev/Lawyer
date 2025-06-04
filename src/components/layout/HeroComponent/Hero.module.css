@@ -1,0 +1,32 @@
+.background__image {
+  position: absolute;
+  top: 52px;
+  z-index: 0;
+}
+
+.text__container {
+  z-index: 100;
+  position: relative;
+  gap: 20px;
+  width: 1090px;
+  text-align: center;
+  margin: 200px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.text__container h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+}
+
+.text__container h1 {
+  font-size: 56px;
+  color: #4F8FF0;
+}
+
+.text__container p {
+  font-size: 20px;
+  color: white;
+}

@@ -8,7 +8,7 @@ const Contact = () => {
 				<div className={styles.contact__container}>
 					{contacts.map((contact) => {
 						return(
-							<a href={contact.link} className={styles.contact__item}>
+							<a key={contact.title} href={contact.link} className={styles.contact__item}>
 								<img src={contact.image} alt={contact.alt} />
 								<p>{contact.title}</p>
 							</a>
