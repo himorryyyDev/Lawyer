@@ -14,13 +14,24 @@
   gap: 20px;
 }
 
-.contact__container a {
+.contact__container p {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: white;
-  gap: 5px;
   font-size: 14px;
+}
+
+.contact__container img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
 
 .call {
