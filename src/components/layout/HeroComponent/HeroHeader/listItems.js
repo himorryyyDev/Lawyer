@@ -1,27 +1,33 @@
 const listItems = [
   {
     id: 1,
-    title: 'Услуги'
+    title: 'Услуги',
+    link: '/',
   },
   {
     id: 2,
-    title: 'О компании'
+    title: 'О компании',
+    link: '/',
   },
   {
     id:3, 
-    title: 'Наши юристы'
+    title: 'Наши юристы',
+    link: '/',
   },
   {
     id: 4,
-    title: 'Отзывы'
+    title: 'Отзывы',
+    link: '/',
   },
   {
     id: 5,
-    title: 'Новости'
+    title: 'Новости',
+    link: '/',
   },
   {
     id:6,
-    title: 'Контакты'
+    title: 'Контакты',
+    link: '/',
   },
 ]
 

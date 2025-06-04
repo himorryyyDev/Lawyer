@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
-  height: 50px;
-  padding: 0px 250px;
+  height: 52px;
+  padding: 0px 300px;
   background-color: black;
   display: flex;
   flex-direction: row;
@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  font-size: 14px;
 }
 
 .contact__container a {
@@ -21,10 +20,12 @@
   align-items: center;
   color: white;
   gap: 5px;
+  font-size: 14px;
 }
 
 .call {
   color: #4F8FF0;
   font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
 }

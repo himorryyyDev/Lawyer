@@ -2,7 +2,7 @@
   width: 100vw;
   height: 112px;
   background-color: rgba(0, 0, 0, 0.76);
-  padding: 0px 250px;
+  padding: 0px 300px;
   color: white;
   display: flex;
   flex-direction: row;
@@ -19,4 +19,23 @@
 .logo p {
   font-size: 20px;
   font-weight: 700;
+}
+
+.link__list {
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+.list__item {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.list__item:hover {
+  color: #4F8FF0;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
 }
