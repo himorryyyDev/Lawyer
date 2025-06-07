@@ -14,8 +14,9 @@ const Hero = () => {
         <Button theme='primary' link='#'>Наши услуги</Button>
       </section>
 
-      <section className={styles.decoration}>
-        
+      <section className={styles.decoration__container}>
+        <img src="/images/sliderNavigation.svg" alt="" />
+        <img src="/images/sliderButtons.svg" alt="" />
       </section>
 
       <img className={styles.background__image} src='/images/heroBackground.png' alt="" />

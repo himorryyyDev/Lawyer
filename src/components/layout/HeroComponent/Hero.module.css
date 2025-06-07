@@ -32,6 +32,11 @@
   color: white;
 }
 
-.decoration {
-  padding: 0px 300px;
+.decoration__container {
+  width: 1320px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
