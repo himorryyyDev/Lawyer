@@ -1,8 +1,17 @@
-.container {
+.header {
+  background-color: rgba(0, 0, 0, 0.76);
   width: 100vw;
   height: 112px;
-  background-color: rgba(0, 0, 0, 0.76);
-  padding: 0px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+}
+
+.container {
+  width: 1320px;
+  height: 112px;
   color: white;
   display: flex;
   flex-direction: row;

@@ -1,0 +1,17 @@
+Button {
+  width: fit-content;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.primary {
+  background-color: #4F8FF0;
+  color: white;
+}
+
+.secondary {
+  background-color: #E6E6E6;
+  color: black;
+}
