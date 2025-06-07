@@ -8,10 +8,25 @@
 
 .primary {
   background-color: #4F8FF0;
+  border-inline: 2px solid #4F8FF0;
   color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary:hover {
+  background-color: white;
+  color: #4F8FF0;
+  transition: all 0.2s ease-in-out;
 }
 
 .secondary {
   background-color: #E6E6E6;
+  border-inline: 2px solid #e6e6e6;
   color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.secondary:hover {
+  background-color: white;
+  transition: all 0.2s ease-in-out;
 }
