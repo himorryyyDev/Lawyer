@@ -4,7 +4,7 @@ const Button = ({children, theme, link}) => {
   return (
     <>
     <a href={[link]}>
-      <button className={`${styles.Button} ${styles[theme] || ''}`}>{children}</button>
+      <button className={`${styles.button} ${styles[theme] || ''}`}>{children}</button>
     </a>
     </>
   )

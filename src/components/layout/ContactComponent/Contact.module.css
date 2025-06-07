@@ -1,8 +1,14 @@
-.container {
+.header {
   width: 100vw;
   height: 52px;
-  padding: 0px 300px;
   background-color: black;
+  display: flex;
+
+}
+
+.container {
+  width: 1320px;
+  height: 52px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
