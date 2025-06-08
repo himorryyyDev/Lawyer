@@ -24,8 +24,11 @@ const Services = () => {
             )
           })}
         </div>
+        <div className={styles.shadow__container}>
+          <div className={styles.inset__shadow}></div>
+        </div>
 
-        <Button theme='primary' link='#'>Все услуги</Button>
+        <Button theme='primary' link='#Сервисы'>Все услуги</Button>
       </section>
     </>
   )

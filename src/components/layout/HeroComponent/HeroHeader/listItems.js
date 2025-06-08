@@ -2,7 +2,7 @@ const listItems = [
   {
     id: 1,
     title: 'Услуги',
-    link: '/',
+    link: '#Сервисы',
   },
   {
     id: 2,

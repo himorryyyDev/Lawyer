@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
   cursor: default;
+  overflow-x: hidden;
 }
 
 main, header, footer {

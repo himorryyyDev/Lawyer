@@ -1,12 +1,15 @@
 .background__image {
   background-size: cover;
+  object-fit: cover;
   height: 100%;
-  width: 1920px;
+  width: 100%;
   max-width: none;
+  min-height: none;
 }
 
 .image__container {
   height: 870px;
+  width: 100vw;
   position: absolute;
   top: 0px;
   z-index: 0;
