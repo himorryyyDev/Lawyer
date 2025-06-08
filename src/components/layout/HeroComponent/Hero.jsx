@@ -13,7 +13,7 @@ const Hero = () => {
         <h3 className={styles.subtitle__item}>ОКАЗЫВАЕМ ВЕСЬ КОМПЛЕКС</h3>
         <h1 className={styles.title__item}>ЮРИДИЧЕСКИХ УСЛУГ</h1>
         <p className={styles.info__item}>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
-        <Button theme='primary' link='#'>Наши услуги</Button>
+        <Button theme='primary' link='#Сервисы'>Наши услуги</Button>
         
         <section className={styles.decoration__container}>
           <img src="/images/sliderNavigation.svg" alt="" />

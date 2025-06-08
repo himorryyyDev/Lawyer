@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 main, header, footer {
@@ -9,4 +10,8 @@ main, header, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button, a {
+  cursor: pointer
 }
