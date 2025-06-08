@@ -52,11 +52,13 @@
   top: 140px;
 }
 
-@media (max-width: 834px) {
+@media (max-width: 1400px) {
   .text__container, .decoration__container {
-    width: 696px;
+    width: 90vw;
   }
+}
 
+@media (max-width: 834px) {
   .text__container {
     margin-top: 30px;
   }
@@ -82,17 +84,24 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 630px) {
+  .image__container {
+    height: 600px;
+  }
+}
+
+@media (max-width: 410px) {
   .decoration__container { 
     display: none;
   }
+}
 
+@media (max-width: 390px) {
   .image__container {
     height: 538px;
   }
 
   .text__container {
-    width: 342px;
     margin-top: 60px;
   }
 

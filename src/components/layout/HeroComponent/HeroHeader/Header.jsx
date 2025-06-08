@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <section className={styles.container}>
+        <section className={styles.header__container}>
           <div className={styles.logo}>
             <h1 className={styles.logo__title}>ПРАВОЗАЩИТНИК</h1>
             <p className={styles.logo__subtitle}>юридическая компания</p>

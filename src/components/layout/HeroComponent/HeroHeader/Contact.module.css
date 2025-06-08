@@ -7,7 +7,7 @@
   z-index: 100;
 }
 
-.container {
+.header__container {
   width: 1320px;
   height: 52px;
   display: flex;
@@ -48,16 +48,16 @@
   cursor: pointer;
 }
 
-@media (max-width: 834px) {
-  .container {
-    width: 696px;
+@media (max-width: 1400px) {
+  .header__container {
+    width: 90vw;
   }
 }
 
-@media (max-width: 390px) {
-  .container {
-    width: 342px;
-  }
+@media (max-width: 834px) {
+}
+
+@media (max-width: 530px) {
 
   .contact__container a:not(:first-child) {
     display: none;

@@ -5,7 +5,7 @@ const Contact = () => {
 	return (
 		<>
 			<header className={styles.header}>
-				<div className={styles.container}>
+				<div className={styles.header__container}>
 					<div className={styles.contact__container}>
 						{contacts.map((contact) => {
 							return(
