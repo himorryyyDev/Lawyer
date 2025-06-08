@@ -1,14 +1,17 @@
+import { useState } from 'react'
 import styles from './Header.module.css'
 import listItems from './listItems'
 
 const Header = () => {
+  const [open, setOpen] = useState(false)
+
   return (
     <>
       <header className={styles.header}>
         <section className={styles.container}>
           <div className={styles.logo}>
-            <h1>ПРАВОЗАЩИТНИК</h1>
-            <p>юридическая компания</p>
+            <h1 className={styles.logo__title}>ПРАВОЗАЩИТНИК</h1>
+            <p className={styles.logo__subtitle}>юридическая компания</p>
           </div>
           <ul className={styles.link__list}>
             {listItems.map((  item) => {
@@ -21,6 +24,11 @@ const Header = () => {
               )
             })}
           </ul>
+          <button className={styles.button__container}>
+            <div className={styles.button__line}></div>
+            <div className={styles.button__line}></div>
+            <div className={styles.button__line}></div>
+          </button>
         </section>
       </header>
     </>

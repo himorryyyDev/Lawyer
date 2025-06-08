@@ -3,7 +3,8 @@
   height: 52px;
   background-color: black;
   display: flex;
-
+  position: relative;
+  z-index: 100;
 }
 
 .container {
@@ -45,4 +46,20 @@
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
+}
+
+@media (max-width: 834px) {
+  .container {
+    width: 696px;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 342px;
+  }
+
+  .contact__container a:not(:first-child) {
+    display: none;
+  }
 }

@@ -21,13 +21,13 @@
   z-index: 100; 
 }
 
-.logo h1 {
+.logo__title {
   color: #4F8FF0;
   font-size: 28px;
   font-weight: 700;
 }
 
-.logo p {
+.logo__subtitle {
   font-size: 20px;
   font-weight: 700;
 }
@@ -49,4 +49,56 @@
   color: #4F8FF0;
   text-decoration: underline;
   transition: all 0.2s ease-in-out;
+}
+
+.button__container {
+  width: 24px;
+  aspect-ratio: 1 / 1;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+
+}
+
+.button__line {
+  width: 24px;
+  height: 3px;
+  background-color: white;
+}
+
+.button__line:nth-child(2) {
+  width: 16px;
+}
+
+@media (max-width: 834px) {
+  .container {
+    width: 696px;
+  }
+
+  .header, .container {
+    height: 84px;
+  }
+
+  .logo__subtitle {
+    font-size: 16px;
+  }
+
+  .logo__title {
+    font-size: 22px;
+  }
+
+  .link__list {
+    display: none;
+  }
+
+  .button__container {
+    display: flex;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 342px;
+  }
 }
