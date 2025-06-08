@@ -28,7 +28,7 @@ const Services = () => {
           <div className={styles.inset__shadow}></div>
         </div>
 
-        <Button theme='primary' link='#Сервисы'>Все услуги</Button>
+        <Button theme='primary' link='#Сервисы'>ВCE УСЛУГИ</Button>
       </section>
     </>
   )

@@ -7,7 +7,7 @@ const listItems = [
   {
     id: 2,
     title: 'О компании',
-    link: '/',
+    link: '#О-компании',
   },
   {
     id:3, 
