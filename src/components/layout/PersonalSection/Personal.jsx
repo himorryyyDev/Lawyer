@@ -4,7 +4,7 @@ import styles from './Personal.module.css'
 const Personal = () => {
   return (
     <>
-      <section className={styles.personal__container}>
+      <section id="Наши-юристы" className={styles.personal__container}>
         <div className={styles.text__container}>
           <h1 className={styles.title__item}>НАШИ ЮРИСТЫ</h1>
           <div className={styles.line__item}></div>

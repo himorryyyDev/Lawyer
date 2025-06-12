@@ -178,5 +178,32 @@
   .person__container {
     width: 100vw;
     overflow-x: scroll;
+    justify-content: left;
+  }
+
+  .person__item:first  {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .description__item {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 834px) {
+  .title__item {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 395px) {
+  .title__item {
+    font-size: 20px;
+  }
+
+  .description__item {
+    font-size: 14px;
   }
 }

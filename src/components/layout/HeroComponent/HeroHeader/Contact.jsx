@@ -7,7 +7,7 @@ const Contact = () => {
 			<header className={styles.header}>
 				<div className={styles.header__container}>
 					<div className={styles.contact__container}>
-						{contacts.map((contact) => {
+						{contacts.slice(1, 3).map((contact) => {
 							return(
 								<a key={contact.title} href={contact.link} className={styles.contact__item}>
 									<img src={contact.image} alt={contact.alt} />

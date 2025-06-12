@@ -12,7 +12,7 @@ const listItems = [
   {
     id:3, 
     title: 'Наши юристы',
-    link: '/',
+    link: '#Наши-юристы',
   },
   {
     id: 4,
