@@ -13,7 +13,7 @@
 }
 
 .image__container {
-  width: 55px;
+  height: 55px;
   aspect-ratio: 1 / 1;
   background-color: #2C2C2C;
   display: flex;

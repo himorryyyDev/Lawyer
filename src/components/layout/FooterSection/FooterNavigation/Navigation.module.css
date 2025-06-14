@@ -13,3 +13,9 @@
 .navigation__item:hover {
   color: #4F8FF0;
 }
+
+@media (max-width: 1350px) {
+  .main__navigation {
+    display: none;
+  }
+}

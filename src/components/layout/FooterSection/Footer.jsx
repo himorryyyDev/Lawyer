@@ -24,8 +24,8 @@ const Footer = () => {
         </section>
         <section className={styles.footer__additional}>
           <div className={styles.additional__container}>
-            <p>Все права защищены, 2023</p>
-            <a href="#footer">
+            <p>Все права защищены, 2025</p>
+            <a href="#Контакты">
               <p>Политика обработки персональных данных</p>
             </a>
           </div>
