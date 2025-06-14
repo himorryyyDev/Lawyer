@@ -1,0 +1,40 @@
+.main__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.image__container {
+  width: 55px;
+  aspect-ratio: 1 / 1;
+  background-color: #2C2C2C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__image {
+  width: 32px;
+  height: 32px;
+}
+
+.contact__description {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #8C8C8C;
+}
+
+.contact__title {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+}

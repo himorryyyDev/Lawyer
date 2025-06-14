@@ -1,0 +1,40 @@
+.main__person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person__preview {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.preview__photo {
+  width: 65px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.preview__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info__name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.info__position {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.person__phrase {
+  font-size: 14px;
+  line-height: 150%;
+}

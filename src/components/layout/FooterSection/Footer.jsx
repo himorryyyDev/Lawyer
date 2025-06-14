@@ -1,7 +1,7 @@
 import styles from './Footer.module.css'
-import Contacts from '../HeroComponent/HeroHeader/Contacts'
-import footerNavigation from './footerNavigation'
-import Button from '../../common/Button/Button'
+import Person from './FooterPerson/Person'
+import Navigation from './FooterNavigation/Navigation'
+import FooterContacts from './FooterContacts/FooterContacts'
 
 const Footer = () => {
   return (
@@ -17,39 +17,9 @@ const Footer = () => {
           </div>
           <div className={styles.footer__line}></div>
           <section className={styles.footer__main}>
-            <ul className={styles.main__contacts}>
-              {Contacts.map((contact) => {
-                return (
-                  <a key={contact.title} target={contact.target} href={contact.link} className={styles.contact__item}>
-                    <div className={styles.image__container}>
-                      <img className={styles.contact__image} src={contact.footerImage} alt={contact.alt} />
-                    </div>
-                    <div className={styles.contact__text}>
-                      <p className={styles.contact__description}>{contact.description}</p>
-                      <p className={styles.contact__title}>{contact.title}</p>
-                    </div>
-                  </a>
-                )
-              })}
-            </ul>
-            <ul className={styles.main__navigation}>
-              {footerNavigation.map((item) => {
-                return (
-                  <a href={item.link} className={styles.navigation__item}>{item.title}</a>
-                )
-              })}
-            </ul>
-            <div className={styles.main__person}>
-              <div className={styles.person__preview}>
-                <img className={styles.preview__photo} src="/images/Alex.png" alt="Миронов Александр" />
-                <div className={styles.preview__info}>
-                  <h1 className={styles.info__name}>Миронов Александр</h1>
-                  <p className={styles.info__position}>Ведущий юрист</p>
-                </div>
-              </div>
-              <p className={styles.person__phrase}>Есть над чем задуматься: тщательные исследования конкурентов разоблачены. Идейные соображения высшего порядка, а также перспективное планирование играет </p>
-              <Button theme='primary'>ЗАДАТЬ ВОПРОС ЮРИСТУ</Button>
-            </div>
+            <FooterContacts />
+            <Navigation />
+            <Person />
           </section>
         </section>
         <section className={styles.footer__additional}>

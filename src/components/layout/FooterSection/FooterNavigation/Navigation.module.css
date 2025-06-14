@@ -1,0 +1,15 @@
+.main__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navigation__item {
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+.navigation__item:hover {
+  color: #4F8FF0;
+}
