@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './Header.module.css'
-import listItems from './listItems'
+import navigationItems from './navigationItems'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -14,9 +14,9 @@ const Header = () => {
             <p className={styles.logo__subtitle}>юридическая компания</p>
           </div>
           <ul className={styles.link__list}>
-            {listItems.map((  item) => {
+            {navigationItems.map((item) => {
               return (
-                <li key={item.id}>
+                <li key={item.title}>
                   <a href={item.link} className={styles.list__item}>
                     {item.title}
                   </a>
