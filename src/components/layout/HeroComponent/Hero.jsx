@@ -1,6 +1,6 @@
 import Header from "./HeroHeader/Header"
 import styles from './Hero.module.css'
-import Button from "../../common/Button/Button"
+import Button from "../../common/ButtonComponent/Button"
 import Contact from "./HeroHeader/Contact"
 
 const Hero = () => {

@@ -1,5 +1,6 @@
 import personList from "./personList"
 import styles from './Personal.module.css'
+import Line from "../../common/LineComponent/Line"
 
 const Personal = () => {
   return (
@@ -7,7 +8,7 @@ const Personal = () => {
       <section id="Наши-юристы" className={styles.personal__container}>
         <div className={styles.text__container}>
           <h1 className={styles.title__item}>НАШИ ЮРИСТЫ</h1>
-          <div className={styles.line__item}></div>
+          <Line />
           <p className={styles.description__item}>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
         </div>
         <div className={styles.person__container}>

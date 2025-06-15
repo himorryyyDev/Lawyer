@@ -1,4 +1,4 @@
-import Button from "../../../common/Button/Button"
+import Button from "../../../common/ButtonComponent/Button"
 import styles from './Person.module.css'
 
 const Person = () => {

@@ -1,4 +1,5 @@
-import Button from '../../common/Button/Button'
+import Button from '../../common/ButtonComponent/Button'
+import Line from '../../common/LineComponent/Line'
 import styles from './Company.module.css'
 
 const Company = () => {
@@ -9,7 +10,7 @@ const Company = () => {
           <div className={styles.information__container}>
             <div className={styles.text__block}>
               <h1 className={styles.title__text}>ЮРИДИЧЕСКАЯ КОМПАНИЯ <b className={styles.color__text}>ПРАВОЗАЩИТНИК</b></h1>
-              <div className={styles.line__item}></div>
+              <Line />
               <div className={styles.description__block}>
                 <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
                 <br />

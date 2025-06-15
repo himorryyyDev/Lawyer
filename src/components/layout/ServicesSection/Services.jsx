@@ -1,13 +1,14 @@
-import Button from '../../common/Button/Button'
+import Button from '../../common/ButtonComponent/Button'
 import styles from './Services.module.css'
 import servicesList from './servicesList' 
+import Line from '../../common/LineComponent/Line'
 
 const Services = () => {
   return (
     <>
       <section id='Сервисы' className={styles.main}>
         <h1 className={styles.title__item}>НАШИ УСЛУГИ</h1>
-        <div className={styles.line__item}></div>
+        <Line />
         <p className={styles.description__item}>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
 
         <div className={styles.services__container}>

@@ -22,13 +22,6 @@
   line-height: 150%;
 }
 
-.info__line {
-  width: 50px;
-  height: 3px;
-  background-color: #4f8ff0;
-  margin: 10px 0px 20px 0px;
-}
-
 .info__description {
   font-size: 16px;
   line-height: 120%;
