@@ -1,7 +1,7 @@
 import Button from '../../common/ButtonComponent/Button'
 import styles from './Services.module.css'
-import servicesList from './servicesList' 
 import Line from '../../common/LineComponent/Line'
+import ServiceList from './ServiceList Component/ServiceList'
 
 const Services = () => {
   return (
@@ -11,23 +11,7 @@ const Services = () => {
         <Line />
         <p className={styles.description__item}>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
 
-        <div className={styles.services__container}>
-          {servicesList.slice(0, 6).map((item) => {
-            return (
-              <div key={item.title} className={styles.services__item}>
-                <img src='/images/Services.svg' alt="" className={styles.services__image}/>
-                <div className={styles.services__text}>
-                  <h1 className={styles.services__title}>{item.title}</h1>
-                  <p className={styles.services__description}>{item.description}</p>
-                  <div className={styles.inner}></div>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-        <div className={styles.shadow__container}>
-          <div className={styles.inset__shadow}></div>
-        </div>
+        <ServiceList />
 
         <Button theme='primary' link='#Сервисы'>ВCE УСЛУГИ</Button>
       </section>
