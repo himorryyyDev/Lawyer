@@ -171,7 +171,7 @@
   .person__container {
     width: 100vw;
     overflow-x: scroll;
-    padding-inline: 50px;
+    padding-inline: 40px;
     justify-content: left;
   }
 

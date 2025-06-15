@@ -182,7 +182,7 @@
     grid-template-columns: repeat(6, 1fr);
     overflow-x: scroll;
     position: relative;
-    padding-inline: 50px;
+    padding-inline: 10px;
   }
 
   .shadow__container {

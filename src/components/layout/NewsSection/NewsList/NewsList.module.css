@@ -171,8 +171,7 @@
   .container__news {
     width: 100vw;
     overflow-x: scroll;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-inline: 70px;
   }
 }
 
