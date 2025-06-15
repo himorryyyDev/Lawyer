@@ -1,0 +1,49 @@
+.review__container {
+  width: 100vw;
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container__header {
+  width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__text {
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 900;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.container__buttons {
+  width: 1320px;
+  display: flex;
+  justify-content: left;
+  gap: 24px;
+}
+
+.container__image {
+  width: 100vw;
+  height: 588px;
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.image__item {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
