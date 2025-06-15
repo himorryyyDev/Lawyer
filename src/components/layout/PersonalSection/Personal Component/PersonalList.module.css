@@ -1,0 +1,148 @@
+.person__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.person__item {
+  width: 312px;
+  height: 414px;
+  background-color: white;
+  box-shadow: 0 0 12px #2121211f;
+  position: relative;
+}
+
+.item__preview {
+  background-color: white;
+  display: flex;
+  width: 312px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 100;
+}
+
+.preview__image {
+  width: 100%;
+  height: 320px;
+  margin-bottom: 14px;
+}
+
+.person__name {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+.person__position {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.item__preview:hover {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.item__info {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.person__main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person__description {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 120%;
+  width: 265px;
+}
+
+.person__seniority {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item__info::before,
+.item__info::after {
+  content: '';
+  position: absolute;
+  border-color: #4f8ff0;
+  border-style: solid;
+}
+
+.item__info::before {
+  top: 20px;
+  left: 20px;
+  border-width: 1px 0 0 1px;
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+.item__info::after {
+  bottom: 20px;
+  right: 20px;
+  border-width: 0 1px 1px 0;
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+.inner::before,
+.inner::after {
+  content: '';
+  position: absolute;
+  border-color: #4f8ff0;
+  border-style: solid;
+}
+
+.inner::before {
+  top: 20px;
+  right: 20px;
+  border-width: 1px 1px 0 0;
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+.inner::after {
+  bottom: 20px;
+  left: 20px;
+  border-width: 0 0 1px 1px;
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1400px) {
+  .person__container {
+    width: 80vw;
+    overflow-x: scroll;
+    padding-inline: 130px;
+    justify-content: left;
+  }
+}
