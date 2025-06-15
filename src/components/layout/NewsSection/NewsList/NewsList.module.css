@@ -11,6 +11,7 @@
   flex-direction: column;
   gap: 15px;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .item__image {
@@ -169,9 +170,9 @@
 
 @media (max-width: 1350px) {
   .container__news {
-    width: 100vw;
+    width: 70vw;
     overflow-x: scroll;
-    padding-inline: 70px;
+    padding-inline: 120px;
   }
 }
 
