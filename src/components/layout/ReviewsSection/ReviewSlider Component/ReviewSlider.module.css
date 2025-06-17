@@ -1,5 +1,6 @@
 .review__slider {
   width: 1320px;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,6 +9,9 @@
 }
 
 .slider__item {
+  min-width: 580px;
+  max-width: 580px;
+  min-height: 180px;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -46,4 +50,43 @@
 .item__review {
   font-size: 14px;
   line-height: 150%;
+}
+
+@media (max-width: 1350px) {
+  .review__slider {
+    width: 90vw;
+    height: fit-content;
+    overflow-x: scroll;
+    padding-inline: 100px;
+  }
+}
+
+@media(max-width: 834px) {
+  .slider__item {
+    min-width: 472px;
+    max-width: 472px;
+    min-height: 201px;
+  }
+} 
+
+@media (max-width: 630px) {
+  .slider__item {
+    min-width: 70vw;
+    max-width: 70vw;
+  }
+  
+  .info__feather {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .person__image {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .info__name {
+    font-size: 18px;
+  }
 }

@@ -21,9 +21,17 @@
   font-weight: 900;
 }
 
+.text__title {
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 900;
+}
+
 .header__buttons {
   display: flex;
   align-items: center;
+  position: relative;
+  top: -10px;
 }
 
 .container__buttons {
@@ -35,7 +43,7 @@
 
 .container__image {
   width: 100vw;
-  height: 588px;
+  height: 100%;
   position: absolute;
   bottom: 0px;
   z-index: -1;
@@ -46,4 +54,30 @@
   width: 100%;
   background-size: cover;
   object-fit: cover;
+}
+
+@media (max-width: 1350px) {
+  .container__buttons, .container__header {
+    width: 90vw;
+  }
+}
+
+@media(max-width: 834px) {
+  .text__title {
+    font-size: 24px;
+  }
+} 
+
+@media (max-width: 650px) {
+  .header__buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .container__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
 }

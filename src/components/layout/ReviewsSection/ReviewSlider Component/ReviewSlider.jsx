@@ -10,13 +10,13 @@ const ReviewSlider = () => {
             <div key={review.name} className={styles.slider__item}>
               <div className={styles.item__info}>
                 <div className={styles.info__person}>
-                  <img src={review.image} alt="" />
+                  <img className={styles.person__image} src={review.image} alt="" />
                   <div className={styles.person__info}>
                     <p className={styles.info__company}>{review.company}</p>
                     <h1 className={styles.info__name}>{review.name}</h1>
                   </div>
                 </div>
-                <img src="/images/feather.svg" alt="" />
+                <img className={styles.info__feather} src="/images/feather.svg" alt="" />
               </div>
               <p className={styles.item__review}>{review.text}</p>
             </div>
