@@ -2,8 +2,13 @@ import Button from '../../common/ButtonComponent/Button'
 import styles from './Services.module.css'
 import Line from '../../common/LineComponent/Line'
 import ServiceList from './ServiceList Component/ServiceList'
+import { useState } from 'react'
+import Modal from '../ModalComponent/Modal'
+import ServicesModalContent from './ServiceModalComponent/ServiceModalContent'
 
 const Services = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <>
       <section id='Сервисы' className={styles.main}>
@@ -13,8 +18,16 @@ const Services = () => {
 
         <ServiceList />
 
-        <Button theme='primary' link='#Сервисы'>ВCE УСЛУГИ</Button>
+        <Button 
+        theme='primary' 
+        link='#Сервисы'
+        onClick={() => setIsModalOpen(true)}
+        >ВCE УСЛУГИ</Button>
       </section>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          <ServicesModalContent onClose={() => setIsModalOpen(false)}/>
+      </Modal>
     </>
   )
 }

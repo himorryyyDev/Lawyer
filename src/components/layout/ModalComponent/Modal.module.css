@@ -1,0 +1,35 @@
+.modal__overlay {
+  padding-top: 40px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  background-color: white;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 4px;
+}
+
+.container__header {
+  display: flex;
+  justify-content: right;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
