@@ -3,9 +3,8 @@ import styles from './Button.module.css'
 const Button = ({children, theme, link, onClick}) => {
   return (
     <>
-    <a href={link || '#'} onClick={(e) => {
+    <a href={link} onClick={(e) => {
       if (onClick) {
-        e.preventDefault()
         onClick()
       }
     }}>

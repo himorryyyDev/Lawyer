@@ -1,5 +1,5 @@
 import styles from './ServiceList.module.css'
-import servicesList from '../servicesList'
+import servicesList from './servicesList'
 
 const ServiceList = () => {
   return (

@@ -8,14 +8,14 @@
   top: 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  z-index: 500;
 }
 
 .modal__container {
   background-color: white;
   padding: 20px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px;

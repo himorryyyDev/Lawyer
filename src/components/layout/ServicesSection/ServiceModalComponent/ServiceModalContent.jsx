@@ -1,5 +1,5 @@
 import styles from './ServiceModalContent.module.css'
-import servicesList from '../servicesList';
+import servicesList from '../ServiceList Component/servicesList';
 import Line from '../../../common/LineComponent/Line';
 
 const ServiceModalContent = () => {
