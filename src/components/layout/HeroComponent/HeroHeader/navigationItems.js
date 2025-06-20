@@ -13,11 +13,11 @@ const navigationItems = [
   },
   {
     title: 'Отзывы',
-    link: '/',
+    link: '#Отзывы',
   },
   {
     title: 'Новости',
-    link: '/',
+    link: '#Полезные-материалы',
   },
   {
     title: 'Контакты',
