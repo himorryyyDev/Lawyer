@@ -3,7 +3,7 @@ import styles from './ReviewSlider.module.css'
 import defaultAvatar from '/images/default-user.jpg'
 
 const ReviewSlider = () => {
-  const handeImageError = (e) => {
+  const handleImageError = (e) => {
     e.target.src = defaultAvatar
   }
 
@@ -16,7 +16,7 @@ const ReviewSlider = () => {
               <div className={styles.item__info}>
                 <div className={styles.info__person}>
                   <div className={styles.person__image}>
-                    <img className={styles.image__item} src={review.image || defaultAvatar} onError={handeImageError} alt="" />
+                    <img className={styles.image__item} src={review.image || defaultAvatar} onError={handleImageError} alt="" />
                   </div>
                   <div className={styles.person__info}>
                     <p className={styles.info__company}>{review.company}</p>

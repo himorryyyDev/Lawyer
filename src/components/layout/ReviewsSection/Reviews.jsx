@@ -1,9 +1,14 @@
+import { useState } from 'react'
 import Button from '../../common/ButtonComponent/Button'
 import Line from '../../common/LineComponent/Line'
 import styles from './Reviews.module.css'
 import ReviewSlider from './ReviewSlider Component/ReviewSlider'
+import Modal from '../../common/ModalComponent/Modal'
+import ReviewListModal from './ReviewListModalComponent/ReviewListModal'
 
 const Reviews = () => {
+  const [isReviewsModalOpen, setIsReviewsModalOpen] = useState(false)
+
   return (
     <>
       <section id='Отзывы' className={styles.review__container}>
@@ -26,13 +31,29 @@ const Reviews = () => {
         <ReviewSlider />
 
         <div className={styles.container__buttons}>
-          <Button theme='primary' link='#Отзывы'>ВСЕ ОТЗЫВЫ</Button>
-          <Button theme='secondary' link='#Отзывы'>НАПИСАТЬ ОТЗЫВ</Button>
+          <Button 
+          theme='primary' 
+          link='#Отзывы'
+          onClick={() => setIsReviewsModalOpen(true)}
+          >ВСЕ ОТЗЫВЫ</Button>
+          <Button 
+          theme='secondary' 
+          link='#Отзывы'
+          onClick={() => setIsNewReviewModalOpen(true)}
+          >НАПИСАТЬ ОТЗЫВ</Button>
         </div>
         <div className={styles.container__image}>
           <img  className={styles.image__item} src="/images/reviewBackground.png" alt="" />
         </div>
       </section>
+
+      <Modal title='ВСЕ ОТЗЫВЫ' isOpen={isReviewsModalOpen} onClose={() => setIsReviewsModalOpen(false)}>
+        <ReviewListModal/>
+      </Modal>
+{/* 
+      <Modal title='ВСЕ ОТЗЫВЫ' isOpen={isNewReviewModalOpen} onClose={() => setIsNewReviewModalOpen(false)}>
+        <ReviewListModal/>
+      </Modal> */}
     </>
   )
 }
