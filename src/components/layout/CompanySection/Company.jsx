@@ -1,8 +1,15 @@
+import { useState } from 'react'
 import Button from '../../common/ButtonComponent/Button'
 import Line from '../../common/LineComponent/Line'
 import styles from './Company.module.css'
+import Modal from '../../common/ModalComponent/Modal'
+import CompanyModal from './CompanyModalComponent/CompanyModal'
+import CertificateModal from './CertifaicateModalComponent/CertificateModal'
 
 const Company = () => {
+  const [isCompanyModalOpen, setIsCompanyModalOpen] = useState(false)
+  const [isCertificateModalOpen, setIsCertificateModalOpen] = useState(false)
+
   return (
     <>
       <section id='О-компании' className={styles.main}>
@@ -24,11 +31,27 @@ const Company = () => {
             </div>
           </div>
           <section className={styles.button__container}>
-            <Button theme='primary' link='#О-компании'>ИСТОРИЯ КОМПАНИИ</Button>
-            <Button theme='secondary' link='#О-компании'>СЕРТИФИКАТЫ</Button>
+            <Button 
+            theme='primary' 
+            link='#О-компании'
+            onClick={() => setIsCompanyModalOpen(true)}
+            >ИСТОРИЯ КОМПАНИИ</Button>
+            <Button 
+            theme='secondary' 
+            link='#О-компании'
+            onClick={() => setIsCertificateModalOpen(true)}
+            >СЕРТИФИКАТЫ</Button>
           </section>
         </section>
       </section>
+
+      <Modal title='ИСТОРИЯ КОМПАНИИ' isOpen={isCompanyModalOpen} onClose={() => setIsCompanyModalOpen(false)}>
+        <CompanyModal onClose={() => setIsCompanyModalOpen(false)}/>
+      </Modal>
+
+      <Modal title='СЕРТИФИКАТЫ' isOpen={isCertificateModalOpen} onClose={() => setIsCertificateModalOpen(false)}>
+        <CertificateModal onClose={() => setIsCertificateModalOpen(false)}/>
+      </Modal>
     </>
   )
 }

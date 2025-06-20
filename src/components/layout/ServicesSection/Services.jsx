@@ -3,7 +3,7 @@ import styles from './Services.module.css'
 import Line from '../../common/LineComponent/Line'
 import ServiceList from './ServiceList Component/ServiceList'
 import { useState } from 'react'
-import Modal from '../ModalComponent/Modal'
+import Modal from '../../common/ModalComponent/Modal'
 import ServicesModalContent from './ServiceModalComponent/ServiceModalContent'
 
 const Services = () => {
@@ -25,8 +25,8 @@ const Services = () => {
         >ВCE УСЛУГИ</Button>
       </section>
 
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-          <ServicesModalContent onClose={() => setIsModalOpen(false)}/>
+      <Modal title='ВСЕ УСЛУГИ' isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <ServicesModalContent onClose={() => setIsModalOpen(false)}/>
       </Modal>
     </>
   )

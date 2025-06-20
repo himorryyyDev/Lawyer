@@ -1,16 +1,3 @@
-.text__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.container__title {
-  font-size: 28px;
-  color: black;
-  font-weight: 900;
-}
-
 .services__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

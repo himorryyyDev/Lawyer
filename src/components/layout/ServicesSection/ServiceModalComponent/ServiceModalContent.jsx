@@ -1,14 +1,9 @@
 import styles from './ServiceModalContent.module.css'
 import servicesList from '../ServiceList Component/servicesList';
-import Line from '../../../common/LineComponent/Line';
 
 const ServiceModalContent = () => {
   return (
     <>
-      <div className={styles.text__container}>
-        <h1 className={styles.container__title}>ВСЕ УСЛУГИ</h1>
-        <Line/>
-      </div>
       <div className={styles.services__container}>
         {servicesList.map((item) => {
           return (
