@@ -63,3 +63,15 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 400px) {
+  .header__container {
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 340px) {
+  .container__title {
+    font-size: 16px;
+  }
+}
