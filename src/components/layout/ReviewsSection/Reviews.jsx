@@ -5,9 +5,11 @@ import styles from './Reviews.module.css'
 import ReviewSlider from './ReviewSlider Component/ReviewSlider'
 import Modal from '../../common/ModalComponent/Modal'
 import ReviewListModal from './ReviewListModalComponent/ReviewListModal'
+import NewReviewModal from './NewReviewModalComponent/NewReviewModal'
 
 const Reviews = () => {
   const [isReviewsModalOpen, setIsReviewsModalOpen] = useState(false)
+  const [isNewReviewModalOpen, setIsNewReviewModalOpen] = useState(false)
 
   return (
     <>
@@ -50,10 +52,10 @@ const Reviews = () => {
       <Modal title='ВСЕ ОТЗЫВЫ' isOpen={isReviewsModalOpen} onClose={() => setIsReviewsModalOpen(false)}>
         <ReviewListModal/>
       </Modal>
-{/* 
-      <Modal title='ВСЕ ОТЗЫВЫ' isOpen={isNewReviewModalOpen} onClose={() => setIsNewReviewModalOpen(false)}>
-        <ReviewListModal/>
-      </Modal> */}
+
+      <Modal title='НАПИШИТЕ ОТЗЫВ' isOpen={isNewReviewModalOpen} onClose={() => setIsNewReviewModalOpen(false)}>
+        <NewReviewModal/>
+      </Modal>
     </>
   )
 }
