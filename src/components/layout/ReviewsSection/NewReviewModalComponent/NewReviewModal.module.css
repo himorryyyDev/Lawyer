@@ -9,6 +9,16 @@
   box-sizing: border-box;
 }
 
+.container__input {
+  padding: 3px;
+}
+
+.input__wide {
+  grid-column: 1 / 3;
+  resize: none;
+  height: 50px;
+}
+
 .button__container {
   display: flex;
   justify-content: center;

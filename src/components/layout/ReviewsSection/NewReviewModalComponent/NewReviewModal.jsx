@@ -15,8 +15,8 @@ const NewReviewModal = () => {
 
   const handleInputChange = () => {
     setPreview({
-      name: nameRef.current.value || 'Имя',
-      company: companyRef.current.value || 'Компания',
+      name: nameRef.current.value || 'Имя не указано',
+      company: companyRef.current.value || 'Компания не указана',
       review: reviewRef.current.value || 'Текст отзыва'
     })
   }
@@ -24,9 +24,9 @@ const NewReviewModal = () => {
   return (
     <>
     <form className={styles.form__container}>
-      <input type="text" ref={nameRef} onChange={handleInputChange} placeholder='Введите ваше имя'/>
-      <input type="text" ref={companyRef} onChange={handleInputChange} placeholder='Введите вашу компанию'/>
-      <textarea type="text" ref={reviewRef} onChange={handleInputChange} placeholder='Напишите ваши впечатления'/>
+      <input className={styles.container__input} type="text" ref={nameRef} onChange={handleInputChange} placeholder='Введите ваше имя'/>
+      <input className={styles.container__input} type="text" ref={companyRef} onChange={handleInputChange} placeholder='Введите вашу компанию'/>
+      <textarea className={`${styles.container__input} ${styles.input__wide}`} type="text" ref={reviewRef} onChange={handleInputChange} placeholder='Напишите ваши впечатления'/>
     </form>
     <section className={styles.review__slider}>
       <div className={styles.slider__item}>
@@ -46,7 +46,7 @@ const NewReviewModal = () => {
       </div>
     </section>
     <section className={styles.button__container}>
-      <Button type='submit' theme='primary'>ОТПРАВИТЬ ОТЗЫВ</Button>
+      <Button theme='primary'>ОТПРАВИТЬ ОТЗЫВ</Button>
     </section>
     </>
   )
