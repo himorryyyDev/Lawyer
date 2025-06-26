@@ -1,13 +1,50 @@
-# React + Vite
+## Project description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern adaptive website for a law firm, developed using React.js and modern front-end technologies. The site includes all the necessary sections for presenting legal services:
 
-Currently, two official plugins are available:
+- Hero section (main banner)
+- List of company services
+- About the company section
+- Gallery of the company's lawyers
+- Customer reviews section
+- Company news section
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key features of the implementation
 
-## Expanding the ESLint configuration
+### Code architecture and organization
+- **Modular structure**: Components, styles, and logic are organized on a modular basis for ease of maintenance and scalability
+- **Clean and readable code**: Following React development best practices
+- **Optimized build**: Using Vite + SWC for rapid development and production builds
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Lawyer" 
+### Technology stack
+- **React 18**: Functional components, hooks (useState, useEffect, useRef, etc.)
+- **Styling**: Vanilla CSS with CSS Modules for style isolation
+- **Responsiveness**: Full desktop-first layout using:
+  - CSS Grid for complex layouts
+  - Flexbox for components
+  - Media queries for all device types
+- **Interactivity**:
+  - Modal windows (controlled via React portals)
+  - Dynamic lists rendered via `map()`
+
+## How to run the project locally
+
+To see the site in action, follow these steps:
+
+1. Make sure you have Node.js (version 16 or higher) installed
+2. Clone the repository (or unzip the project archive)
+3. Open a terminal in the project root folder and run:
+
+```bash
+npm install
+npm run dev
+```
+
+4. Open your browser and go to the address that appears in the terminal (usually `http://localhost:5173`)
+
+For production builds:
+
+```bash
+npm run build
+npm run preview
+```
