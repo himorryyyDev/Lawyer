@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './Header.module.css'
-import navigationItems from './navigationItems'
 import Logo from '../../../common/LogoComponent/Logo'
+import Navigation from '../../../common/NavigationComponent/Navigation'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -11,17 +11,7 @@ const Header = () => {
       <header className={styles.header}>
         <section className={styles.header__container}>
           <Logo/>
-          <ul className={styles.link__list}>
-            {navigationItems.map((item) => {
-              return (
-                <li key={item.title}>
-                  <a href={item.link} className={styles.list__item}>
-                    {item.title}
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
+          <Navigation direction='row'/>
           <button className={styles.button__container}>
             <div className={styles.button__line}></div>
             <div className={styles.button__line}></div>

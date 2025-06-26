@@ -1,0 +1,32 @@
+.navigation__container {
+  gap: 32px;
+  display: flex;
+}
+
+.container__item {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.container__item:hover {
+  color: #4F8FF0;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .row {
+    display: none;
+  }
+}
