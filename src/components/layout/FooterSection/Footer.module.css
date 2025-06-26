@@ -24,20 +24,6 @@
   gap: 50px;
 }
 
-.logo__title {
-  color: #4F8FF0;
-  font-size: 28px;
-  line-height: 150%;
-  font-weight: 700;
-  margin-bottom: -15px;
-}
-
-.logo__description {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 150%;
-}
-
 .header__info {
   color: #F8F5F4;
   width: 862px;

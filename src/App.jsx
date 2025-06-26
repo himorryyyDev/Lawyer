@@ -1,4 +1,5 @@
 import './App.css'
+import Burger from './components/common/BurgerComponent/Burger'
 import Company from './components/layout/CompanySection/Company'
 import Footer from './components/layout/FooterSection/Footer'
 import Hero from './components/layout/HeroComponent/Hero'
@@ -18,6 +19,8 @@ function App() {
 			<News />
 
 			<Footer />
+
+			<Burger/>
 		</>
 	)
 }

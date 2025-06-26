@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './Header.module.css'
 import navigationItems from './navigationItems'
+import Logo from '../../../common/LogoComponent/Logo'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -9,10 +10,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <section className={styles.header__container}>
-          <div className={styles.logo}>
-            <h1 className={styles.logo__title}>ПРАВОЗАЩИТНИК</h1>
-            <p className={styles.logo__subtitle}>юридическая компания</p>
-          </div>
+          <Logo/>
           <ul className={styles.link__list}>
             {navigationItems.map((item) => {
               return (

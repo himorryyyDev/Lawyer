@@ -1,0 +1,13 @@
+.container__title {
+  color: #4F8FF0;
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 700;
+  margin-bottom: -15px;
+}
+
+.container__description {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
